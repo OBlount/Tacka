@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css"
+    integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA=="
+    crossorigin="anonymous"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <title>CSGO-Radar_Cheat</title>
+</head>
+
+<body>
+    <div id="app" class="section container">
+        <h1 class="title is-1">CountUp!</h1>
+        <p class="is-small" style="color: grey;">A test landing page for the HTTP server.</p>
+        <div class="box content has-text-centered">
+            <h1 class="title is-1">{{ count }}</h1>
+            <button class="button is-warning" type="button" v-on:click="Increment">Click Me!</button>
+        </div>
+    </div>
+
+    <!-- Using Vue to make an interactive counter -->
+    <script>
+        Vue.config.devtools = false
+        Vue.config.productionTip = false;
+        
+        const app = new Vue({
+        el: '#app',
+        data: {
+            count: 0
+        },
+        methods: {
+            Increment: function() {
+                this.count += 1;
+            }
+        }
+    })
+    </script>
+</body>
+</html>

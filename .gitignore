@@ -1,0 +1,6 @@
+# Visual Studio and VSCode ignores:
+.vs/
+
+# C# console project ignores:
+CSGO-Radar-Cheat/bin
+CSGO-Radar-Cheat/obj
